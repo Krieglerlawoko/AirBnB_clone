@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices */
+@media only screen and (min-width: 992px) {
+
+}
+footer {
+  clear: left;
+  background-color: #FFF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  display: flex;
+}
+
+footer p {
+  text-align: center;
+  color: #484848;
+}

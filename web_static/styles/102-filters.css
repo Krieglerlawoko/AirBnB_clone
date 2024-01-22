@@ -1,0 +1,119 @@
+.filters {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+  .filters {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+  }
+
+  button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    max-width: 220px;
+    border: none;
+    border-radius: 4px;
+    margin: auto 30px auto auto;
+    align-self: center;
+    color: #FFF;
+    height: 48px;
+    width: 20%;
+  }
+
+  button:hover {
+    cursor: pointer;
+    opacity: .9;
+  }
+
+  .locations,
+  .amenities {
+    height: 100%;
+    width: 25%;
+    /* display: inline-block;
+    vertical-align: left; */
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+  }
+
+  .locations {
+    border-right: 1px solid #DDDDDD;
+  }
+
+  .locations h3,
+  .amenities h3{
+    margin: 1em 0 auto 30px;
+    font-weight: 600;
+  }
+
+  .locations h4,
+  .amenities h4 {
+    font-size: 14px;
+    margin: auto 0 auto 30px;
+    font-weight: 400;
+  }
+
+  /* ================================================================= */
+  /* dropdown menu */
+  /* ================================================================= */
+
+  .popover {
+    border-radius: 4px;
+    border: 1px solid #DDDDDD;
+    background-color: #FAFAFA;
+    margin: 17px 0 0 0;
+    padding: 20px 20px 20px 20px;
+    display: none;
+  }
+
+  .popover ul {
+    margin-left: 10px;
+  }
+
+  ul > ul {
+    padding: 0;
+  }
+  .popover li{
+    list-style-type: none;
+  }
+
+  .popover h2 {
+    margin: 5px auto 5px auto;
+    font-size: 16px;
+  }
+
+  /* drop down on hover */
+
+  .locations:hover,
+  .amenities:hover {
+    cursor: pointer;
+  }
+
+  .locations:hover .popover {
+    cursor: pointer;
+    display: block;
+  }
+
+  .amenities:hover .popover {
+    cursor: pointer;
+    display: block;
+  }
+
+}
+/* Large devices */
+@media only screen and (min-width: 992px) {
+
+}

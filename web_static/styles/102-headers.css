@@ -1,0 +1,125 @@
+der {
+  z-index: 4;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  background-image: url(../images/logo.png);
+  color: #fff;
+  height: 3.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  float: left;
+  text-align: left;
+}
+/*****************************************************************/
+/* rotate burguer
+/*****************************************************************/
+
+.main_nav_burguer {
+  margin: .6rem 0 0 1rem;
+  transform: rotate(90deg);
+  color: lightslategray;
+  transition: .2s ease-in-out;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.main_nav_burguer:hover {
+  cursor: pointer;
+  transform: rotate(0deg);
+  color: silver;
+  transition: .2s ease-in-out;
+}
+#main_check:checked {
+  transform: rotate(0deg);
+  cursor: pointer;
+  color: silver;
+  transition: .2s ease-in-out;
+}
+
+/*****************************************************************/
+/* popup first level menu
+/*****************************************************************/
+.nav_bar_level1 {
+  border-radius: 4px;
+  width: 0%;
+  height: 0%;
+  transition: .2s ease-in-out;
+  background-color: aliceblue;
+}
+/* hide checkbox */
+input {
+  display: none;
+}
+/* hide second level */
+.nav_bar_level1 li ul {
+  display: none;
+}
+
+/* hide first level */
+.nav_bar_level1 li{
+  display: none;
+}
+
+/* display first level */
+#main_check:checked ~ * .nav_bar_level1 {
+  display: block;
+}
+/* display first level title*/
+#main_check:checked ~ * .nav_bar_level1 li {
+  margin: .5rem;
+  display: block;
+  font-size: 1.3rem;
+  color: lightslategray;
+  font-weight: bold;
+  transition: .5s ease-in-out;
+}
+/* hover link menu */
+.nav_bar_level1 li label span:hover,
+ul li span:hover
+ {
+  background-color: #434343;
+  padding: .2rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+  color: #FAFAFA;
+  cursor: pointer;
+}
+/* display first level background */
+#main_check:checked ~ * .nav_bar_level1
+{
+  padding: .8rem;
+  display: block;
+  margin: 1rem;
+  flex-direction: column;
+  transition: .3s ease-in-out;
+  width: 50vw;
+  transition: 1s ease-in-out;
+}
+
+/*display second level */
+#second_check:checked  + ul{
+  display: block;
+}
+#third_check:checked  + ul{
+  display: block;
+}
+/* Small devices */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+  header {
+      background-position-x: 1rem;
+      background-position: left;
+  }
+  .mobile_nav {
+    display: none;
+  }
+}
+/* Large devicesx and up) */
+@media only screen and (min-width: 992px) {
+
+}
